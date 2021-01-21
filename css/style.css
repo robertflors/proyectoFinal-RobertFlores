@@ -634,3 +634,7 @@ body#gridIndex main div img{
 	justify-self: center;
 }
 
+.error404--tamañoImagen{
+
+	width: 100vw;
+}
