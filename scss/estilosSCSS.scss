@@ -93,9 +93,10 @@ ul#listaIndexSinVinieta{
 	display: none;
 }
 
-div.carousel-item img.cursos-carrusel__imagen--tamanio{
-    height: 20vh;
+div.carousel-item{
+	img{
     margin: 0 auto;
+    height: 20vh;}
 }
 
 }	
