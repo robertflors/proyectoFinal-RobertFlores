@@ -231,10 +231,7 @@ section#cursoFiltrado {
 
 #grillaTutoriales {
   display: grid;
-  grid-template-areas: "img img img img"
- "section section section aside"
- "section section section aside"
- "section section section aside";
+  grid-template-areas: "img img img img" "section section section aside" "section section section aside" "section section section aside";
   grid-template-rows: 1fr auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
