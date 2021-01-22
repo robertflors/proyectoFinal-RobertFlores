@@ -56,7 +56,10 @@ header img {
     margin-top: 20px;
     font-size: 15px; }
   ul#listaIndexSinVinieta {
-    display: none; } }
+    display: none; }
+  div.carousel-item img {
+    margin: 0 auto;
+    height: 20vh; } }
 
 /*------------------------LA BARRA DE MENÚ-------------------------*/
 .barraMenu {
