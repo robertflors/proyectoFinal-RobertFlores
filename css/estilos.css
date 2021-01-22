@@ -106,18 +106,6 @@ main {
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center; }
 
-#imagenGrande2 {
-  width: 100vw;
-  height: 80vh;
-  background-image: url(../img/thumb-1920-757057.jpg);
-  background-position: center; }
-
-#imagenGrande1 {
-  width: 100vw;
-  height: 80vh;
-  background-image: url(../img/thumb-1920-876878.png);
-  background-position: center; }
-
 /*-LISTA DE IMAGENES AL LADO DEL "QUIENES SOMOS"-*/
 .main-cajaTransparente__listaImagenes {
   margin: 5px;
