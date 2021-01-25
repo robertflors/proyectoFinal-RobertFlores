@@ -86,7 +86,7 @@ header img {
     font-size: 15px; }
   ul#listaIndexSinVinieta {
     display: none; }
-  div.carousel-item img {
+  div.tienda__carruselPortada--responsivo img {
     margin: 0 auto;
     height: 20vh; } }
 
@@ -227,7 +227,7 @@ main {
       width: 100%;
       height: auto; } }
 
-div#carouselExampleIndicators {
+div#carouselExampleControls {
   margin-bottom: 30px; }
 
 /*---------------------------------CURSOS----------------------------------------------------------*/

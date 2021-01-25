@@ -135,15 +135,13 @@ header img{
 	    display: none;
     }
 
-    div.carousel-item{
+    div.tienda__carruselPortada--responsivo{
 	    img{
         margin: 0 auto;
         height: 20vh;}
     }    
 
 }	
-
-    
 
 /*------------------------LA BARRA DE MENÚ-------------------------*/
 
@@ -329,9 +327,7 @@ main{
 
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-
-	
+	justify-content: space-around;	
 }
 
 .tienda__producto{
@@ -344,13 +340,10 @@ main{
 	   }
 }
 
-
-
 .cursos-carrusel__imagen--tamanio{
     
     height: 50vh;
     margin: 0 auto;
-
 }
 
 /*.tienda__producto:hover img {
@@ -379,11 +372,10 @@ main{
 	         img{
 	         	width: 100%;
 	            height: auto; }
-    }  
- 
+    }   
 }
 
-div#carouselExampleIndicators{
+div#carouselExampleControls{
 
 	margin-bottom: 30px;
 }
