@@ -196,12 +196,8 @@ main {
   flex-direction: row;
   justify-content: space-around; }
 
-.tienda__producto {
-  flex: 0 0 200px;
-  margin: 10px;
-  border: 1px solid #35F9C4; }
-  .tienda__producto img {
-    width: 100%; }
+section.tienda div.card {
+  margin-bottom: 50px; }
 
 .cursos-carrusel__imagen--tamanio {
   height: 50vh;
