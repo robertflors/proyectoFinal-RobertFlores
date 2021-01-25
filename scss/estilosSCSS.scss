@@ -8,7 +8,7 @@ body {
 	font-family: "raleway", sans-serif;
 	background-color: black;
 	
-     }
+}
 
 .letraBlanca {
 
@@ -22,9 +22,50 @@ body {
 
 .main-contacto__boton--margen{
 
-	margin-bottom: 30PX;
+	margin-bottom: 30px;
 	margin-right: 15px;
 }
+
+a {
+
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+.main-grid {
+
+   display: grid;
+
+   grid-template-areas:
+     "header header header"
+     "nav nav nav"
+     "main main main"
+     "footer footer footer";
+
+   grid-template-rows: 1fr 1fr auto 1fr; 
+   grid-template-columns: 1fr 1fr 1fr;
+
+  
+
+   height: 100vh;
+   width: 100vw;
+   
+}
+
+header {
+   grid-area: header;
+}
+footer {
+   grid-area: footer;
+}
+main{
+	grid-area: main;
+}
+nav {
+   grid-area: nav;
+}    
 
 /*-------TODO LO QUE ES EL HEADER Y LA BARRA DEL MENÚ-------------*/
 /*----------------------------------------------------------------*/
@@ -63,41 +104,42 @@ header img{
         word-spacing: 10px;
 	}
 
-	header img{
+	header{
 
-	width: 100px;
-	height: 100px;
-    }	      
+		background-color: black;
+		background-image: none;
+
+		img{
+	      width: 100px;
+	      height: 100px;}
+    } 	      
     
-div.anuncio{
-	font-size: 13px;
-  }
+    div.anuncio{
+	    font-size: 13px;
+      }
 
- .main-cajaTransparente__parrafoAjustado{
-
+    .main-cajaTransparente__parrafoAjustado{
 	
-	margin-top: 20px;
-	font-size: 13px;
-	margin-right: 2px;	
-} 
+	    margin-top: 20px;
+	    font-size: 13px;
+	    margin-right: 2px;	} 
 
- .main-cajaTransparente__parrafoAjustado--chico{
-
+    .main-cajaTransparente__parrafoAjustado--chico{
 	
-	margin-top: 20px;
-	font-size: 15px;	
-} 
+	    margin-top: 20px;
+	    font-size: 15px;	
+    } 
 
-ul#listaIndexSinVinieta{
+    ul#listaIndexSinVinieta{
 
-	display: none;
-}
+	    display: none;
+    }
 
-div.carousel-item{
-	img{
-    margin: 0 auto;
-    height: 20vh;}
-}
+    div.carousel-item{
+	    img{
+        margin: 0 auto;
+        height: 20vh;}
+    }    
 
 }	
 
@@ -126,7 +168,7 @@ nav {
 
   	margin: 0 auto;
 
-  	  a:hoover{
+  	  a:hover{
   	  	 color: #35F9C4;
 	     transition-duration: 0.5s;
   	  }
@@ -181,21 +223,21 @@ main{
 
 }
 
-#imagenGrande2{
+// #imagenGrande2{
 
-	width: 100vw;
-	height: 80vh;
-	background-image: url(../img/thumb-1920-757057.jpg);
-	background-position: center;
-}
+// 	width: 100vw;
+// 	height: 80vh;
+// 	background-image: url(../img/thumb-1920-757057.jpg);
+// 	background-position: center;
+// }
 
-#imagenGrande1{
+// #imagenGrande1{
 
-	width: 100vw;
-	height: 80vh;
-	background-image: url(../img/thumb-1920-876878.png);
-	background-position: center;
-}
+// 	width: 100vw;
+// 	height: 80vh;
+// 	background-image: url(../img/thumb-1920-876878.png);
+// 	background-position: center;
+// }
 
 /*-LISTA DE IMAGENES AL LADO DEL "QUIENES SOMOS"-*/
 
@@ -415,8 +457,6 @@ section {
 	flex-wrap: wrap;
 	flex-direction: column;
 
-
-
 	overflow: hidden;
 
 }
@@ -576,3 +616,5 @@ footer{
     	}    	
     }
  }
+
+
