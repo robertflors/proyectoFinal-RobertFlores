@@ -106,7 +106,9 @@ header img{
 		img{
 	      width: 100px;
 	      height: 100px;}
-    } 	      
+    }
+
+    // ----index----     	      
     
     div.anuncio{
 	    font-size: 13px;
@@ -129,6 +131,8 @@ header img{
 	    display: none;
     }
 
+    // -----tienda responsive-------
+
     div.tienda__carruselPortada--responsivo{
 
 	    img{
@@ -140,7 +144,20 @@ header img{
 
     	font-size: 15px;
     	letter-spacing: 2px;
-    }    
+    }
+
+    // ----tutoriales----
+    section{
+      div{
+    	div.tutoriales__imagenGuia--responsiva{
+    		text-align: center;
+    		img{
+    			height: 100px;
+    			width: auto;
+    		}
+    	}
+      }
+   }    
 }	
 
 /*------------------------LA BARRA DE MENÚ-------------------------*/
@@ -350,87 +367,10 @@ section#cursoFiltrado{
 	padding: 2%;
 }
 
-#grillaTutoriales{
-
-	display: grid;
-
-	 grid-template-areas:
-	 "img img img img"
-     "section section section aside"
-     "section section section aside"
-     "section section section aside";
-
-   grid-template-rows: 1fr auto auto auto; 
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-
-   grid-column-gap: 20px;
-   grid-row-gap: 20px;
- }
-
-
-div#imagenTutorialesGrande{
-
-	grid-area: img;
-
-    width: 100vw;
-	height: 80vh;
-	background-image: url(../img/coffee3-2.jpg);
-	background-position: top;
-}
-
-section {
-
-	grid-area: section;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-
-	overflow: hidden;
-}
-
-aside {
-
-	grid-area: aside;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-
-#portadaAeropress{
-
-    display: flex;
-    
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+.tutoriales__tituloGuia{
 
     letter-spacing: 5px;
     text-shadow: 3px 3px black;
-    text-decoration-line: underline overline;
-
-	background-image: url(../img/a.jpg);
-	background-size: cover;
-	width: 100%;
-	height: 50vh;
-}
-
-#portadaChemex{
-
-    display: flex;
-    
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-
-    letter-spacing: 5px;
-    text-shadow: 3px 3px black;
-    text-decoration-line: underline overline;
-
-	background-image: url(../img/chemexx.jpg);
-	background-size: cover;
-	background-position: top;
-	width: 100%;
-	height: 50vh;
 }
 
 #chemex{
@@ -447,7 +387,7 @@ aside {
 	align-items: center;
 }
 
-.tutorial__imagen--Pequeña{
+.tutorial__imagen--Pequenia{
 
 	width: 45%;
 	height: auto;
@@ -460,30 +400,23 @@ aside {
 	text-align: justify;
 }
 
-/*--------------EL ASIDE DE SPOTIFY Y SUS ELEMENTOS Y ANIMACIONES--------------------------------------*/
-
-#iframeSpotify{
-
-	position: sticky;
-	top: 0px;
-    height: 100vh;
-}
-
 .main-tutoriales__titulo--animado{
      
     text-align: center;
     font-family: "monoton";
     word-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   
 
-   animation-name: spotify;
+   animation-name: tutorial;
    animation-iteration-count: infinite;
    animation-timing-function: ease-in;
    animation-duration: 1s;
    animation-delay: 0s;
 }
 
-@keyframes spotify{
+@keyframes tutorial{
   
     0%{ color: white}
 
