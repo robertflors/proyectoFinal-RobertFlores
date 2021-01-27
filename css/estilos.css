@@ -344,6 +344,10 @@ footer {
   text-align: center;
   background-color: #464646; }
 
+.footer__icono--tamanio {
+  width: 30px;
+  height: 30px; }
+
 li.facebook {
   background: url(../img/facebook.png);
   background-repeat: no-repeat; }
