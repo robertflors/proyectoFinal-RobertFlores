@@ -48,7 +48,7 @@ nav {
 /*EL LOGO Y NOMBRE DE LA EMPRESA*/
 header {
   text-align: center;
-  background-image: url(../img/stars_space_universe_galaxy_nebula_119068_3840x2400.jpg);
+  background-image: url(../img/stars_space.jpg);
   background-size: cover; }
 
 header img {
@@ -88,7 +88,10 @@ header img {
     display: none; }
   div.tienda__carruselPortada--responsivo img {
     margin: 0 auto;
-    height: 20vh; } }
+    height: 20vh; }
+  p.tienda__cartelOfertas {
+    font-size: 15px;
+    letter-spacing: 2px; } }
 
 /*------------------------LA BARRA DE MENÚ-------------------------*/
 .barraMenu {
@@ -109,7 +112,7 @@ div#navbarNavDropdown ul {
 /*------------------------AQUÍ COMIENZA EL MAIN-----------------------*/
 /*--------------------------------------------------------------------*/
 main {
-  background-image: url(../img/stars_space_universe_galaxy_nebula_119068_3840x2400.jpg);
+  background-image: url(../img/stars_space.jpg);
   background-attachment: fixed;
   background-size: cover; }
 
@@ -148,19 +151,19 @@ main {
   list-style: none; }
 
 #imagenIndex0 {
-  background-image: url(../img/shutterstock_609809297.jpg); }
+  background-image: url(../img/granos-tostados.jpg); }
 
 #imagenIndex1 {
-  background-image: url(../img/thumb-1920-778570.jpg); }
+  background-image: url(../img/meteorito.jpg); }
 
 #imagenIndex2 {
-  background-image: url(../img/img_taza-cafe-hd.jpg); }
+  background-image: url(../img/taza-espresso.jpg); }
 
 #imagenIndex3 {
-  background-image: url(../img/cafe-cafeina-estacion-internacional.jpg); }
+  background-image: url(../img/astronauta.jpg); }
 
 #imagenIndex4 {
-  background-image: url(../img/coffee-beans-coffee-concepts-large-grains-coffee-background.jpg); }
+  background-image: url(../img/granos-cafe.jpg); }
 
 @keyframes anuncio {
   0% {
@@ -196,32 +199,19 @@ main {
   flex-direction: row;
   justify-content: space-around; }
 
+.tienda__cartelOfertas {
+  background-color: white;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 15px;
+  text-align: center; }
+
 section.tienda div.card {
   margin-bottom: 50px; }
 
 .cursos-carrusel__imagen--tamanio {
   height: 50vh;
   margin: 0 auto; }
-
-/*.tienda__producto:hover img {
-
-	transform: scale(2, 2);
-}*/
-@media (max-width: 768px) {
-  .tienda {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  .tienda__producto {
-    width: 50%;
-    height: auto;
-    margin: 10px;
-    border: none; }
-    .tienda__producto img {
-      width: 100%;
-      height: auto; } }
 
 div#carouselExampleControls {
   margin-bottom: 30px; }
@@ -291,7 +281,6 @@ aside {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  /*color: white;*/
   letter-spacing: 5px;
   text-shadow: 3px 3px black;
   text-decoration-line: underline overline;

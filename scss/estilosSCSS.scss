@@ -27,7 +27,6 @@ body {
 }
 
 a {
-
     color: black;
     text-decoration: none;
     font-weight: bold;
@@ -47,11 +46,8 @@ a {
    grid-template-rows: 1fr 1fr auto 1fr; 
    grid-template-columns: 1fr 1fr 1fr;
 
-  
-
    height: 100vh;
    width: 100vw;
-   
 }
 
 header {
@@ -73,9 +69,9 @@ nav {
 header{
 
 	text-align: center;
-	background-image: url(../img/stars_space_universe_galaxy_nebula_119068_3840x2400.jpg);
+	background-image: url(../img/stars_space.jpg);
 	background-size: cover;
-	      }
+}
 
 header img{
 
@@ -90,9 +86,8 @@ header img{
 	font-size: 2.5em;
 	letter-spacing: 5px;
 	word-spacing: 20px;
-	  }
+}
 /*-----------------------------RESPONSIVE-------------------------------------------------------------*/
-
 
 @media(max-width: 768px) {
 
@@ -136,9 +131,16 @@ header img{
     }
 
     div.tienda__carruselPortada--responsivo{
+
 	    img{
         margin: 0 auto;
         height: 20vh;}
+    }
+
+    p.tienda__cartelOfertas{
+
+    	font-size: 15px;
+    	letter-spacing: 2px;
     }    
 
 }	
@@ -151,16 +153,12 @@ header img{
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;	
-	
 }
-
 
 nav {
 
 	background-color: white;
-
-	 }
-
+}
 
   div#navbarNavDropdown ul {
 
@@ -171,14 +169,12 @@ nav {
 	     transition-duration: 0.5s;
   	  }
   }
-
-
   
 /*------------------------AQUÍ COMIENZA EL MAIN-----------------------*/
 /*--------------------------------------------------------------------*/
 main{
 
-	background-image: url(../img/stars_space_universe_galaxy_nebula_119068_3840x2400.jpg);
+	background-image: url(../img/stars_space.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -192,19 +188,16 @@ main{
 	margin-top: 3vh;
 	width: 350px;
 	height: 300px;
-	
 }  
 
 .main-cajaTransparente__parrafoAjustado{
 
 	text-align: justify;
 	line-height: 1.5;
-	
 }  
   
 
 .main-cajaTransparente{
-
 
 	background-color: rgba(255, 255, 255, 0.3);
 	
@@ -218,24 +211,7 @@ main{
 
 	background-color: rgba(0, 0, 0, 0.2);
 	text-align: center;  
-
 }
-
-// #imagenGrande2{
-
-// 	width: 100vw;
-// 	height: 80vh;
-// 	background-image: url(../img/thumb-1920-757057.jpg);
-// 	background-position: center;
-// }
-
-// #imagenGrande1{
-
-// 	width: 100vw;
-// 	height: 80vh;
-// 	background-image: url(../img/thumb-1920-876878.png);
-// 	background-position: center;
-// }
 
 /*-LISTA DE IMAGENES AL LADO DEL "QUIENES SOMOS"-*/
 
@@ -247,7 +223,6 @@ main{
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
-
 }
 
 #listaIndexSinVinieta{
@@ -257,35 +232,30 @@ main{
 
 #imagenIndex0{
 
-	background-image: url(../img/shutterstock_609809297.jpg);
+	background-image: url(../img/granos-tostados.jpg);
 }
 
 #imagenIndex1{
 
-	background-image: url(../img/thumb-1920-778570.jpg);
-	
+	background-image: url(../img/meteorito.jpg);
 }
 
 #imagenIndex2{
 
-	background-image: url(../img/img_taza-cafe-hd.jpg);
-	
+	background-image: url(../img/taza-espresso.jpg);
 }
 
 #imagenIndex3{
 
-	background-image: url(../img/cafe-cafeina-estacion-internacional.jpg);
-	
+	background-image: url(../img/astronauta.jpg);
 }
 
 #imagenIndex4{
 
-	background-image: url(../img/coffee-beans-coffee-concepts-large-grains-coffee-background.jpg);
-	
+	background-image: url(../img/granos-cafe.jpg);
 }
 
-
-
+// ---------ANUNCIO OFERTAS--------
 @keyframes anuncio{
 
 	0%{ background-color: #F6FB69 }
@@ -303,7 +273,6 @@ main{
 
 .anuncio{
 
-
     background-color: #FD1717;
 	width: 100vw;
 	height: 5vh;
@@ -317,9 +286,7 @@ main{
    animation-timing-function: ease-in;
    animation-duration: 1s;
    animation-delay: 0s;
-
 }
-
 
 /*--------------------------------------------------TIENDA---------------------------------------*/
 
@@ -328,6 +295,15 @@ main{
  	display: flex;
  	flex-direction: row;
  	justify-content: space-around;	
+}
+
+.tienda__cartelOfertas{
+
+	background-color: white;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 15px;
+	text-align: center;	
 }
 
 section.tienda{
@@ -340,35 +316,6 @@ section.tienda{
     
     height: 50vh;
     margin: 0 auto;
-}
-
-/*.tienda__producto:hover img {
-
-	transform: scale(2, 2);
-}*/
-
-@media(max-width: 768px){
-
-	.tienda{
-
-       display: flex;
-	   flex-wrap: wrap;
-	   flex-direction: column;
-	   align-items: center;
-	   justify-content: space-around;
-	}
-
-	.tienda__producto{
-
-	width: 50%;
-	height: auto;
-	margin: 10px;
-	border: none;
-
-	         img{
-	         	width: 100%;
-	            height: auto; }
-    }   
 }
 
 div#carouselExampleControls{
@@ -396,7 +343,6 @@ section#cursoFiltrado{
 	margin-top: 30px;
 }
 
-
 /*---------------------------------TUTORIALES------------------------------------------------------*/
 
 .main-cajaBlanca{
@@ -404,9 +350,7 @@ section#cursoFiltrado{
 	background-color: white;
 	overflow: hidden;
 	padding: 2%;
-	
 }
-
 
 #grillaTutoriales{
 
@@ -423,8 +367,7 @@ section#cursoFiltrado{
 
    grid-column-gap: 20px;
    grid-row-gap: 20px;
-  
-}
+ }
 
 
 div#imagenTutorialesGrande{
@@ -435,7 +378,6 @@ div#imagenTutorialesGrande{
 	height: 80vh;
 	background-image: url(../img/coffee3-2.jpg);
 	background-position: top;
-
 }
 
 section {
@@ -446,7 +388,6 @@ section {
 	flex-direction: column;
 
 	overflow: hidden;
-
 }
 
 aside {
@@ -455,9 +396,7 @@ aside {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	
 }
-
 
 #portadaAeropress{
 
@@ -470,7 +409,6 @@ aside {
     letter-spacing: 5px;
     text-shadow: 3px 3px black;
     text-decoration-line: underline overline;
-
 
 	background-image: url(../img/a.jpg);
 	background-size: cover;
@@ -486,18 +424,15 @@ aside {
     align-content: center;
     justify-content: center;
 
-    /*color: white;*/
     letter-spacing: 5px;
     text-shadow: 3px 3px black;
     text-decoration-line: underline overline;
-
 
 	background-image: url(../img/chemexx.jpg);
 	background-size: cover;
 	background-position: top;
 	width: 100%;
 	height: 50vh;
-
 }
 
 #chemex{
@@ -512,10 +447,7 @@ aside {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-
 }
-
-
 
 .tutorial__imagen--Pequeña{
 
@@ -537,7 +469,6 @@ aside {
 	position: sticky;
 	top: 0px;
     height: 100vh;
-	
 }
 
 .main-tutoriales__titulo--animado{
@@ -552,9 +483,6 @@ aside {
    animation-timing-function: ease-in;
    animation-duration: 1s;
    animation-delay: 0s;
-
-
-
 }
 
 @keyframes spotify{
@@ -570,7 +498,6 @@ aside {
 	80%{ color: #35F9C4 }
 
 	100%{ color: #015941 }
-
 }
 
 
@@ -582,12 +509,10 @@ footer{
 	background-color: #464646;
 }
 
-
 @each $redes in facebook, instagram, twitter, gmail {
 	li.#{$redes} {
 		background: url(../img/#{$redes}.png);
 		background-repeat: no-repeat;
-
 	}
 }
 
