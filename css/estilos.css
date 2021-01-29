@@ -84,8 +84,6 @@ header img {
   .main-cajaTransparente__parrafoAjustado--chico {
     margin-top: 20px;
     font-size: 15px; }
-  ul#listaIndexSinVinieta {
-    display: none; }
   div.tienda__carruselPortada--responsivo img {
     margin: 0 auto;
     height: 20vh; }
@@ -98,13 +96,15 @@ header img {
       height: 100px;
       width: auto; } }
 
-/*------------------------LA BARRA DE MENÚ-------------------------*/
-.barraMenu {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center; }
+@media (max-width: 992px) {
+  ul#listaIndexSinVinieta {
+    display: none; } }
 
+@media (min-width: 887px) {
+  div.tienda__agrupacionProductos--flexible {
+    flex-wrap: nowrap; } }
+
+/*------------------------LA BARRA DE MENÚ-------------------------*/
 nav {
   background-color: white; }
 
@@ -199,7 +199,7 @@ main {
   animation-delay: 0s; }
 
 /*--------------------------------------------------TIENDA---------------------------------------*/
-.tienda {
+.tienda__agrupacionProductos--flexible {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -212,7 +212,7 @@ main {
   letter-spacing: 15px;
   text-align: center; }
 
-section.tienda div.card {
+section div.tienda__agrupacionProductos--flexible div.card {
   margin-bottom: 50px; }
 
 .cursos-carrusel__imagen--tamanio {
