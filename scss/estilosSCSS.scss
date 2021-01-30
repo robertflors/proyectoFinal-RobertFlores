@@ -1,6 +1,12 @@
+// variables----
+$azul: #35F9C4;
+$gris: #464646;
+
 *{
 	margin: 0px;
 }
+
+// variables----
 
 /*------------------BODY Y CLASES VARIAS---------------------------------------------*/
 body {
@@ -12,12 +18,7 @@ body {
 .letraBlanca {
 
 	color: white;
-	
-             }   
-.letraAzul {
-
-	color: #35F9C4;
-}               
+}            
 
 .main-contacto__boton--margen{
 
@@ -32,18 +33,18 @@ a {
     font-size: 20px;
  }
 
-.main-grid {
+.grid-index-contacto {
 
    display: grid;
 
    grid-template-areas:
-     "header header header"
-     "nav nav nav"
-     "main main main"
-     "footer footer footer";
+     "header header"
+     "nav nav"
+     "main main"
+     "footer footer";
 
    grid-template-rows: 1fr 1fr auto 1fr; 
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
 
    height: 100vh;
    width: 100vw;
@@ -81,7 +82,7 @@ header img{
 .header__titulo{
 
 	font-family: "monoton";
-	text-shadow: -5px 5px #35F9C4;
+	text-shadow: -5px 5px $azul;
 	font-size: 2.5em;
 	letter-spacing: 5px;
 	word-spacing: 20px;
@@ -92,8 +93,7 @@ header img{
 
 	.header__titulo{
 
-		font-family: "monoton";
-        text-shadow: -1px 3px #35F9C4;
+        text-shadow: -1px 3px $azul;
         font-size: 20px;
         word-spacing: 10px;
 	}
@@ -108,11 +108,27 @@ header img{
 	      height: 100px;}
     }
 
-    // ----index----     	      
+    // ----index----
+
+    div#main-index__imagenCohete, div#main-index__imagenCafeChocolate{
+
+    	height: 10rem;
+
+    	h3{
+    		font-size: 15px;
+    	}
+    }     	      
     
     div.anuncio{
+
 	    font-size: 13px;
-      }
+	}
+
+	div.main-cajaTransparente{
+
+		background-color: $gris;
+		opacity: 0.9;
+	}  
 
     .main-cajaTransparente__parrafoAjustado{
 	
@@ -141,7 +157,6 @@ header img{
     	letter-spacing: 2px;
     }
 
-
     // ----tutoriales----
     section{
       div{
@@ -153,6 +168,10 @@ header img{
     		}
     	}
       }
+   }
+
+   p.tutorial__parrafoAjustado{
+   	text-align: center;
    }    
 }
 // ----lista de imágenes en el index-----
@@ -185,7 +204,7 @@ nav {
   	margin: 0 auto;
 
   	  a:hover{
-  	  	 color: #35F9C4;
+  	  	 color: $azul;
 	     transition-duration: 0.5s;
   	  }
   }
@@ -201,6 +220,49 @@ main{
 
 /*-----------------------------------------INDEX----------------------------------------------------*/
 
+#main-index__imagenCohete{
+
+    height: 30rem;
+	background-image: url(../img/cohete.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+#main-index__imagenCafeChocolate{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 30rem;
+	background-image: url(../img/cafe_chocolate.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+
+	h3{
+
+	   color: white;
+	   font-size: 30px;
+	   // font-family: "monoton";
+       // word-spacing: 10px;
+	   position: relative;
+	   text-align: center;
+     }
+
+}
+
+#main-index__imagenCafeChocolate:before{
+
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
 .main-cajaTransparente__parrafoAjustado--chico{
 
 	text-align: justify;
@@ -214,6 +276,7 @@ main{
 
 	text-align: justify;
 	line-height: 1.5;
+	margin-top: 3vh;
 }  
   
 
@@ -292,6 +355,9 @@ main{
 }
 
 .anuncio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
     background-color: #FD1717;
 	width: 100vw;
@@ -330,7 +396,21 @@ main{
 section{
 	div.tienda__agrupacionProductos--flexible{
 		div.card{
-		margin-bottom: 50px;}
+			margin-bottom: 50px;
+			div.card-body{
+				a.btn{
+					background-color: $gris;
+					border: none;
+					box-shadow: 2px 2px 5px $azul;
+				}
+
+				a.btn:hover{
+					background-color: $azul;
+					box-shadow: 2px 2px 5px $gris;
+				}
+			}
+
+	    }
 	}
 }
 
@@ -427,13 +507,13 @@ section#cursoFiltrado{
   
     0%{ color: white}
 
-	20%{ color: #35F9C4}
+	20%{ color: $azul}
 
 	40%{ color: #015941 }
 
 	60%{ color: white  }
 
-	80%{ color: #35F9C4 }
+	80%{ color: $azul }
 
 	100%{ color: #015941 }
 }
@@ -444,7 +524,7 @@ section#cursoFiltrado{
 footer{
 
 	text-align: center;
-	background-color: #464646;
+	background-color: $gris;
 }
 
 .footer__icono--tamanio {
