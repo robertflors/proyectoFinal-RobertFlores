@@ -294,6 +294,10 @@ section#cursoFiltrado {
 #chemex {
   margin-top: 50px; }
 
+#prensaFrancesa {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
 .tutorial {
   display: flex;
   flex-wrap: wrap;
