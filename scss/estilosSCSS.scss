@@ -13,6 +13,10 @@ body {
 
 	font-family: "raleway", sans-serif;
 	background-color: black;
+
+	background-image: url(../img/stars_space.jpg);
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .letraBlanca {
@@ -33,37 +37,7 @@ a {
     font-size: 20px;
  }
 
-.grid-body{
-
-   display: grid;
-
-   grid-template-areas:
-     "header header"
-     "nav nav"
-     "main main"
-     "footer footer";
-
-   grid-template-rows: auto auto auto auto; 
-   grid-template-columns: 1fr 1fr;
-
-   height: 100vh;
-   width: 100vw;
-}
-
-header {
-   grid-area: header;
-}
-footer {
-   grid-area: footer;
-}
-main{
-	grid-area: main;
-}
-nav {
-   grid-area: nav;
-}    
-
-/*-------TODO LO QUE ES EL HEADER Y LA BARRA DEL MENÚ-------------*/
+/*-------------HEADER----------------*/
 /*----------------------------------------------------------------*/
 /*EL LOGO Y NOMBRE DE LA EMPRESA*/
 header{
@@ -108,7 +82,7 @@ header img{
 	      height: 100px;}
     }
 
-    // ----index----
+    // ----index responsive----
 
     div#main-index__imagenCohete, div#main-index__imagenCafeChocolate{
 
@@ -119,11 +93,6 @@ header img{
     	}
     }     	      
     
-    div.anuncio{
-
-	    font-size: 13px;
-	}
-
 	div.main-cajaTransparente{
 
 		background-color: $gris;
@@ -157,7 +126,7 @@ header img{
     	letter-spacing: 2px;
     }
 
-    // ----tutoriales----
+    // ----tutoriales responsive----
     section{
       div{
     	div.tutoriales__imagenGuia--responsiva{
@@ -168,6 +137,11 @@ header img{
     		}
     	}
       }
+   }
+
+   #flecha{
+   	width: 24px;
+   	height: 24px;
    }
 
    p.tutorial__parrafoAjustado{
@@ -211,12 +185,7 @@ nav {
   
 /*------------------------AQUÍ COMIENZA EL MAIN-----------------------*/
 /*--------------------------------------------------------------------*/
-main{
 
-	background-image: url(../img/stars_space.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-}
 
 /*-----------------------------------------INDEX----------------------------------------------------*/
 
@@ -244,8 +213,6 @@ main{
 
 	   color: white;
 	   font-size: 30px;
-	   // font-family: "monoton";
-       // word-spacing: 10px;
 	   position: relative;
 	   text-align: center;
      }
@@ -393,7 +360,7 @@ div#carouselExampleControls{
 
 .main-cajaTransparente--Oscura{
 	background-color: black;
-	margin-bottom: 30px;
+	margin-bottom: 4%;
 
 	img{
 		width: 500px;
@@ -403,10 +370,14 @@ div#carouselExampleControls{
 	h1{
 	    text-align: center;
 	}
+
+	p.main-cajaTransparente__parrafoAjustado--chico{
+		margin: auto;
+	}
 }
 
 section#cursoFiltrado{
-	margin-top: 30px;
+	margin-top: 4%;
 }
 
 /*---------------------------------TUTORIALES------------------------------------------------------*/
@@ -487,6 +458,14 @@ section#cursoFiltrado{
 	80%{ color: $azul }
 
 	100%{ color: #015941 }
+}
+
+#flecha{
+
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	
 }
 
 

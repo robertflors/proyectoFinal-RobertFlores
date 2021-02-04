@@ -5,7 +5,10 @@
 /*------------------BODY Y CLASES VARIAS---------------------------------------------*/
 body {
   font-family: "raleway", sans-serif;
-  background-color: black; }
+  background-color: black;
+  background-image: url(../img/stars_space.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
 
 .letraBlanca {
   color: white; }
@@ -20,27 +23,7 @@ a {
   font-weight: bold;
   font-size: 20px; }
 
-.grid-body {
-  display: grid;
-  grid-template-areas: "header header" "nav nav" "main main" "footer footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  width: 100vw; }
-
-header {
-  grid-area: header; }
-
-footer {
-  grid-area: footer; }
-
-main {
-  grid-area: main; }
-
-nav {
-  grid-area: nav; }
-
-/*-------TODO LO QUE ES EL HEADER Y LA BARRA DEL MENÚ-------------*/
+/*-------------HEADER----------------*/
 /*----------------------------------------------------------------*/
 /*EL LOGO Y NOMBRE DE LA EMPRESA*/
 header {
@@ -75,8 +58,6 @@ header img {
     height: 10rem; }
     div#main-index__imagenCohete h3, div#main-index__imagenCafeChocolate h3 {
       font-size: 15px; }
-  div.anuncio {
-    font-size: 13px; }
   div.main-cajaTransparente {
     background-color: #464646;
     opacity: 0.9; }
@@ -98,6 +79,9 @@ header img {
     section div div.tutoriales__imagenGuia--responsiva img {
       height: 100px;
       width: auto; }
+  #flecha {
+    width: 24px;
+    height: 24px; }
   p.tutorial__parrafoAjustado {
     text-align: center; } }
 
@@ -121,11 +105,6 @@ div#navbarNavDropdown ul {
 
 /*------------------------AQUÍ COMIENZA EL MAIN-----------------------*/
 /*--------------------------------------------------------------------*/
-main {
-  background-image: url(../img/stars_space.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
-
 /*-----------------------------------------INDEX----------------------------------------------------*/
 #main-index__imagenCohete {
   height: 30rem;
@@ -240,15 +219,17 @@ div#carouselExampleControls {
 /*---------------------------------CURSOS----------------------------------------------------------*/
 .main-cajaTransparente--Oscura {
   background-color: black;
-  margin-bottom: 30px; }
+  margin-bottom: 4%; }
   .main-cajaTransparente--Oscura img {
     width: 500px;
     padding: 20px; }
   .main-cajaTransparente--Oscura h1 {
     text-align: center; }
+  .main-cajaTransparente--Oscura p.main-cajaTransparente__parrafoAjustado--chico {
+    margin: auto; }
 
 section#cursoFiltrado {
-  margin-top: 30px; }
+  margin-top: 4%; }
 
 /*---------------------------------TUTORIALES------------------------------------------------------*/
 .main-cajaBlanca {
@@ -307,6 +288,11 @@ section#cursoFiltrado {
     color: #35F9C4; }
   100% {
     color: #015941; } }
+
+#flecha {
+  position: fixed;
+  bottom: 40px;
+  right: 20px; }
 
 /*-----------------------AQUI EMPIEZA EL FOOTER--------------------------*/
 /*-----------------------------------------------------------------------*/
