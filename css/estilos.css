@@ -312,7 +312,7 @@ section#cursoFiltrado {
 /*-----------------------------------------------------------------------*/
 footer {
   text-align: center;
-  background-color: #464646; }
+  background-color: black; }
 
 .footer__icono--tamanio {
   width: 30px;
