@@ -263,7 +263,7 @@ nav {
 	text-align: center;  
 }
 
-/*-LISTA DE IMAGENES AL LADO DEL "QUIENES SOMOS"-*/
+/*-LISTA DE IMAGENES AL LADO DEL "QUIÉNES SOMOS"-*/
 
 .main-cajaTransparente__listaImagenes{
 
@@ -329,6 +329,9 @@ section{
 		div.card{
 			margin-bottom: 50px;
 			div.card-body{
+				h5{
+					font-weight: bold;
+				}
 				a.btn{
 					background-color: $gris;
 					border: none;
@@ -367,7 +370,7 @@ div#carouselExampleControls{
 		padding: 20px;
 	}
 
-	h1{
+	h2{
 	    text-align: center;
 	}
 
@@ -460,12 +463,15 @@ section#cursoFiltrado{
 	100%{ color: #015941 }
 }
 
+a.main-tutoriales__titulo--animado:hover{
+	transform: scale(2,2);
+}
+
 #flecha{
 
 	position: fixed;
 	bottom: 40px;
 	right: 20px;
-	
 }
 
 

@@ -158,7 +158,7 @@ div#navbarNavDropdown ul {
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center; }
 
-/*-LISTA DE IMAGENES AL LADO DEL "QUIENES SOMOS"-*/
+/*-LISTA DE IMAGENES AL LADO DEL "QUIÉNES SOMOS"-*/
 .main-cajaTransparente__listaImagenes {
   margin: 5px;
   width: 45vw;
@@ -201,6 +201,8 @@ div#navbarNavDropdown ul {
 
 section div.tienda__agrupacionProductos--flexible div.card {
   margin-bottom: 50px; }
+  section div.tienda__agrupacionProductos--flexible div.card div.card-body h5 {
+    font-weight: bold; }
   section div.tienda__agrupacionProductos--flexible div.card div.card-body a.btn {
     background-color: #464646;
     border: none;
@@ -223,7 +225,7 @@ div#carouselExampleControls {
   .main-cajaTransparente--Oscura img {
     width: 500px;
     padding: 20px; }
-  .main-cajaTransparente--Oscura h1 {
+  .main-cajaTransparente--Oscura h2 {
     text-align: center; }
   .main-cajaTransparente--Oscura p.main-cajaTransparente__parrafoAjustado--chico {
     margin: auto; }
@@ -288,6 +290,9 @@ section#cursoFiltrado {
     color: #35F9C4; }
   100% {
     color: #015941; } }
+
+a.main-tutoriales__titulo--animado:hover {
+  transform: scale(2, 2); }
 
 #flecha {
   position: fixed;
